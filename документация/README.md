@@ -14,6 +14,13 @@
 | `02-инструкция-дизайн-ревью.md` | Как проверять сайт после изменений, формат отчёта, viewport, severity |
 | `03-opencode-designops-workflow.md` | Как opencode должен работать с документацией, задачами и проверками |
 | `04-карта-ассетов.md` | Какие flat-ассеты использовать в WordPress и где они применяются |
+| `05-prod-media-map.md` | Фактическое наличие ассетов в production Media Library |
+| `06-kadence-general-block-planning.md` | Планирование Kadence General: stories, journeys, edge cases |
+| `06-kadence-general-block-stories.md` | User stories для Kadence General block |
+| `07-kadence-current-settings.md` | Все применённые настройки Kadence (Layout, Images, Back to Top, 404, Comments, Breadcrumbs, Social, Performance) |
+| `08-kadence-404-page-layout.md` | Дизайн 404 страницы (mu-plugin) |
+| `09-kadence-performance-block.md` | Performance-настройки Kadence (fonts local, microdata off) |
+| `10-prod-state.md` | **Prod state reference** — активные плагины, тема, deploy, этапы, блокеры |
 
 ## Где фиксировать новые замечания
 
