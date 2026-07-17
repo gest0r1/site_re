@@ -1,0 +1,28 @@
+/*
+!/public_html
+!/документация
+!/беклог-промтов
+!/.gitignore
+
+# WP credentials
+/public_html/wp-config.php
+/public_html/wp-config-sample.php
+
+# WP cache / temp / backup
+/public_html/wp-content/cache/
+/public_html/wp-content/upgrade/
+/public_html/wp-content/updraft/
+/public_html/wp-content/advanced-cache.php
+/public_html/wp-content/wp-cache-config.php
+
+# Logs
+/public_html/wp-content/debug.log
+/public_html/error_log
+*.log
+
+# Security / server config
+/public_html/.htaccess
+
+# OS junk
+.DS_Store
+Thumbs.db
