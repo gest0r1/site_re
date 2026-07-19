@@ -1,0 +1,153 @@
+{
+  "version": "flat-1.0",
+  "naming": "NN-category-name.ext",
+  "groups": {
+    "00": "documentation",
+    "01": "brand",
+    "02": "navigation",
+    "03": "path",
+    "04": "property",
+    "05": "status",
+    "06": "trust",
+    "07": "form",
+    "08": "risk",
+    "09": "poster",
+    "10": "favicon"
+  },
+  "files": [
+    {
+      "old": "README.md",
+      "new": "00-readme-kadence-assets.md"
+    },
+    {
+      "old": "FILES.md",
+      "new": "00-files-usage-map.md"
+    },
+    {
+      "old": "manifest.json",
+      "new": "00-manifest-flat.json"
+    },
+    {
+      "old": "brand/logo-horizontal-dark.svg",
+      "new": "01-brand-logo-horizontal-dark.svg"
+    },
+    {
+      "old": "brand/logo-horizontal-light.svg",
+      "new": "01-brand-logo-horizontal-light.svg"
+    },
+    {
+      "old": "brand/logo-mark.svg",
+      "new": "01-brand-logo-mark.svg"
+    },
+    {
+      "old": "icons/navigation/menu.svg",
+      "new": "02-navigation-menu.svg"
+    },
+    {
+      "old": "icons/navigation/search.svg",
+      "new": "02-navigation-search.svg"
+    },
+    {
+      "old": "icons/paths/seller-home.svg",
+      "new": "03-path-seller-home.svg"
+    },
+    {
+      "old": "icons/paths/buyer-key.svg",
+      "new": "03-path-buyer-key.svg"
+    },
+    {
+      "old": "icons/paths/estimate.svg",
+      "new": "03-path-estimate.svg"
+    },
+    {
+      "old": "icons/paths/risk-check.svg",
+      "new": "03-path-risk-check.svg"
+    },
+    {
+      "old": "icons/paths/compare.svg",
+      "new": "03-path-compare.svg"
+    },
+    {
+      "old": "icons/property/property-area.svg",
+      "new": "04-property-area.svg"
+    },
+    {
+      "old": "icons/property/property-rooms.svg",
+      "new": "04-property-rooms.svg"
+    },
+    {
+      "old": "icons/property/property-floor.svg",
+      "new": "04-property-floor.svg"
+    },
+    {
+      "old": "icons/property/property-location.svg",
+      "new": "04-property-location.svg"
+    },
+    {
+      "old": "icons/property/property-favorite.svg",
+      "new": "04-property-favorite.svg"
+    },
+    {
+      "old": "icons/status/status-available.svg",
+      "new": "05-status-available.svg"
+    },
+    {
+      "old": "icons/status/status-sold.svg",
+      "new": "05-status-sold.svg"
+    },
+    {
+      "old": "icons/trust/trust-expert.svg",
+      "new": "06-trust-expert.svg"
+    },
+    {
+      "old": "icons/forms/forms-phone.svg",
+      "new": "07-form-phone.svg"
+    },
+    {
+      "old": "risk/risk-high.svg",
+      "new": "08-risk-high.svg"
+    },
+    {
+      "old": "risk/risk-medium.svg",
+      "new": "08-risk-medium.svg"
+    },
+    {
+      "old": "risk/risk-low.svg",
+      "new": "08-risk-low.svg"
+    },
+    {
+      "old": "risk/risk-verified.svg",
+      "new": "08-risk-verified.svg"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "old": "favicon/favicon.svg",
+      "new": "10-favicon-favicon.svg"
+    },
+    {
+      "old": "favicon/site-icon-512.svg",
+      "new": "10-favicon-site-icon-512.svg"
+    },
+    {
+      "old": "favicon/favicon-16.png",
+      "new": "10-favicon-16.png"
+    },
+    {
+      "old": "favicon/favicon-32.png",
+      "new": "10-favicon-32.png"
+    },
+    {
+      "old": "favicon/apple-touch-icon.png",
+      "new": "10-favicon-apple-touch-icon.png"
+    },
+    {
+      "old": "favicon/site-icon-512.png",
+      "new": "10-favicon-site-icon-512.png"
+    }
+  ],
+  "missing": []
+}

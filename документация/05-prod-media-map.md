@@ -83,6 +83,8 @@ cropped-10-favicon-favicon.jpg
 
 ## Результат инвентаризации (задача 002)
 
+Hero-постеры `09-poster-hero-main-desktop.svg` и `09-poster-hero-main-mobile.svg` очищены от CTA. Кнопки для Hero реализуются отдельно в HTML/Kadence-верстке.
+
 Таблица выше заполнена через WP-CLI (SSH, production). Все 34 flat asset-файла сопоставлены по basename:
 
 - Attachment ID подтверждён через `wp_posts.ID`

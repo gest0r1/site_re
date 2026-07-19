@@ -1,0 +1,902 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "meta": {
+    "project": "дом-эксперт.рф",
+    "concept": "A — Экспертность + доверие",
+    "version": "1.2",
+    "date": "2026-07-05",
+    "targets": [
+      "1440px desktop",
+      "768px tablet",
+      "390px mobile"
+    ],
+    "notes": "Tokens are implementation-ready references. Values may be mapped to WordPress theme.json or CSS custom properties during development.",
+    "delivery": "All icons and poster compositions in 03-wireframes.svg are inline vector elements; preview is rendered from the same SVG."
+  },
+  "cssVariables": {
+    "prefix": "--de-",
+    "examples": {
+      "colorBrand900": "--de-color-brand-900",
+      "colorAction600": "--de-color-action-600",
+      "space4": "--de-space-4",
+      "radiusCard": "--de-radius-card",
+      "shadowCard": "--de-shadow-card",
+      "fontDisplay": "--de-font-display",
+      "fontBody": "--de-font-body"
+    }
+  },
+  "color": {
+    "brand": {
+      "950": {
+        "value": "#071426",
+        "css": "--de-color-brand-950",
+        "usage": "dark hero and footer"
+      },
+      "900": {
+        "value": "#0B1F3A",
+        "css": "--de-color-brand-900",
+        "usage": "primary brand, header"
+      },
+      "800": {
+        "value": "#123155",
+        "css": "--de-color-brand-800",
+        "usage": "hover, dark cards"
+      },
+      "700": {
+        "value": "#1B456E",
+        "css": "--de-color-brand-700",
+        "usage": "links on light backgrounds"
+      },
+      "100": {
+        "value": "#EAF0F6",
+        "css": "--de-color-brand-100",
+        "usage": "soft information background"
+      },
+      "50": {
+        "value": "#F4F7FA",
+        "css": "--de-color-brand-50",
+        "usage": "section tint"
+      }
+    },
+    "action": {
+      "700": {
+        "value": "#23644F",
+        "css": "--de-color-action-700",
+        "usage": "pressed"
+      },
+      "600": {
+        "value": "#2F7D62",
+        "css": "--de-color-action-600",
+        "usage": "primary positive action"
+      },
+      "500": {
+        "value": "#3D9274",
+        "css": "--de-color-action-500",
+        "usage": "hover"
+      },
+      "100": {
+        "value": "#DDEFE8",
+        "css": "--de-color-action-100",
+        "usage": "success background"
+      },
+      "50": {
+        "value": "#F1F8F5",
+        "css": "--de-color-action-50",
+        "usage": "soft success surface"
+      }
+    },
+    "neutral": {
+      "1000": {
+        "value": "#101722",
+        "css": "--de-color-neutral-1000"
+      },
+      "900": {
+        "value": "#172033",
+        "css": "--de-color-neutral-900",
+        "usage": "primary text"
+      },
+      "700": {
+        "value": "#455064",
+        "css": "--de-color-neutral-700",
+        "usage": "secondary text"
+      },
+      "600": {
+        "value": "#5D687B",
+        "css": "--de-color-neutral-600"
+      },
+      "500": {
+        "value": "#7E8796",
+        "css": "--de-color-neutral-500",
+        "usage": "metadata"
+      },
+      "400": {
+        "value": "#A8AFBA",
+        "css": "--de-color-neutral-400"
+      },
+      "300": {
+        "value": "#CDD2D9",
+        "css": "--de-color-neutral-300",
+        "usage": "strong border"
+      },
+      "200": {
+        "value": "#E2E5E9",
+        "css": "--de-color-neutral-200",
+        "usage": "default border"
+      },
+      "100": {
+        "value": "#EEF0F2",
+        "css": "--de-color-neutral-100",
+        "usage": "muted background"
+      },
+      "50": {
+        "value": "#F7F7F6",
+        "css": "--de-color-neutral-50"
+      },
+      "0": {
+        "value": "#FFFFFF",
+        "css": "--de-color-neutral-0"
+      }
+    },
+    "warm": {
+      "100": {
+        "value": "#EEEAE2",
+        "css": "--de-color-warm-100"
+      },
+      "50": {
+        "value": "#F7F5F0",
+        "css": "--de-color-warm-50",
+        "usage": "primary page background"
+      }
+    },
+    "info": {
+      "700": {
+        "value": "#225B96",
+        "css": "--de-color-info-700"
+      },
+      "100": {
+        "value": "#DCEBFA",
+        "css": "--de-color-info-100"
+      },
+      "50": {
+        "value": "#F1F7FD",
+        "css": "--de-color-info-50"
+      }
+    },
+    "warning": {
+      "700": {
+        "value": "#8A5A0A",
+        "css": "--de-color-warning-700"
+      },
+      "600": {
+        "value": "#B77913",
+        "css": "--de-color-warning-600"
+      },
+      "100": {
+        "value": "#F8E8BF",
+        "css": "--de-color-warning-100"
+      },
+      "50": {
+        "value": "#FFF8E8",
+        "css": "--de-color-warning-50"
+      }
+    },
+    "danger": {
+      "700": {
+        "value": "#982F36",
+        "css": "--de-color-danger-700"
+      },
+      "600": {
+        "value": "#C54850",
+        "css": "--de-color-danger-600"
+      },
+      "100": {
+        "value": "#F6DADD",
+        "css": "--de-color-danger-100"
+      },
+      "50": {
+        "value": "#FFF2F3",
+        "css": "--de-color-danger-50"
+      }
+    },
+    "overlay": {
+      "dark60": {
+        "value": "rgba(7, 20, 38, 0.60)",
+        "css": "--de-overlay-dark-60"
+      },
+      "dark12": {
+        "value": "rgba(7, 20, 38, 0.12)",
+        "css": "--de-overlay-dark-12"
+      },
+      "light88": {
+        "value": "rgba(255, 255, 255, 0.88)",
+        "css": "--de-overlay-light-88"
+      }
+    }
+  },
+  "risk": {
+    "excellent": {
+      "range": "85–100",
+      "foreground": "#23644F",
+      "background": "#DDEFE8",
+      "cssForeground": "--de-risk-excellent-fg",
+      "cssBackground": "--de-risk-excellent-bg",
+      "label": "Низкий риск"
+    },
+    "good": {
+      "range": "70–84",
+      "foreground": "#2F7D62",
+      "background": "#EAF5F0",
+      "cssForeground": "--de-risk-good-fg",
+      "cssBackground": "--de-risk-good-bg",
+      "label": "Умеренно низкий риск"
+    },
+    "attention": {
+      "range": "50–69",
+      "foreground": "#8A5A0A",
+      "background": "#FFF3D6",
+      "cssForeground": "--de-risk-attention-fg",
+      "cssBackground": "--de-risk-attention-bg",
+      "label": "Требует внимания"
+    },
+    "high": {
+      "range": "25–49",
+      "foreground": "#A5442F",
+      "background": "#FBE2D9",
+      "cssForeground": "--de-risk-high-fg",
+      "cssBackground": "--de-risk-high-bg",
+      "label": "Высокий риск"
+    },
+    "critical": {
+      "range": "0–24",
+      "foreground": "#982F36",
+      "background": "#F6DADD",
+      "cssForeground": "--de-risk-critical-fg",
+      "cssBackground": "--de-risk-critical-bg",
+      "label": "Критический риск"
+    },
+    "unknown": {
+      "range": "no data",
+      "foreground": "#5D687B",
+      "background": "#EEF0F2",
+      "cssForeground": "--de-risk-unknown-fg",
+      "cssBackground": "--de-risk-unknown-bg",
+      "label": "Недостаточно данных"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "display": {
+        "value": "Lora, Georgia, 'Times New Roman', serif",
+        "css": "--de-font-display",
+        "notes": "Cyrillic-capable editorial headings"
+      },
+      "body": {
+        "value": "Inter, Arial, sans-serif",
+        "css": "--de-font-body",
+        "notes": "UI and long-form text"
+      },
+      "mono": {
+        "value": "'IBM Plex Mono', Consolas, monospace",
+        "css": "--de-font-mono",
+        "notes": "IDs, technical metadata only"
+      }
+    },
+    "fontWeight": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "styles": {
+      "displayXL": {
+        "fontFamily": "display",
+        "fontSize": "64px",
+        "lineHeight": "1.08",
+        "fontWeight": 500,
+        "letterSpacing": "-0.025em",
+        "css": "--de-type-display-xl"
+      },
+      "displayL": {
+        "fontFamily": "display",
+        "fontSize": "52px",
+        "lineHeight": "1.12",
+        "fontWeight": 500,
+        "letterSpacing": "-0.02em",
+        "css": "--de-type-display-l"
+      },
+      "h1": {
+        "fontFamily": "display",
+        "fontSize": "44px",
+        "lineHeight": "1.16",
+        "fontWeight": 500,
+        "letterSpacing": "-0.015em",
+        "css": "--de-type-h1"
+      },
+      "h2": {
+        "fontFamily": "display",
+        "fontSize": "34px",
+        "lineHeight": "1.2",
+        "fontWeight": 500,
+        "letterSpacing": "-0.01em",
+        "css": "--de-type-h2"
+      },
+      "h3": {
+        "fontFamily": "body",
+        "fontSize": "24px",
+        "lineHeight": "1.28",
+        "fontWeight": 600,
+        "letterSpacing": "-0.01em",
+        "css": "--de-type-h3"
+      },
+      "h4": {
+        "fontFamily": "body",
+        "fontSize": "20px",
+        "lineHeight": "1.35",
+        "fontWeight": 600,
+        "css": "--de-type-h4"
+      },
+      "bodyL": {
+        "fontFamily": "body",
+        "fontSize": "18px",
+        "lineHeight": "1.6",
+        "fontWeight": 400,
+        "css": "--de-type-body-l"
+      },
+      "bodyM": {
+        "fontFamily": "body",
+        "fontSize": "16px",
+        "lineHeight": "1.55",
+        "fontWeight": 400,
+        "css": "--de-type-body-m"
+      },
+      "bodyS": {
+        "fontFamily": "body",
+        "fontSize": "14px",
+        "lineHeight": "1.5",
+        "fontWeight": 400,
+        "css": "--de-type-body-s"
+      },
+      "labelM": {
+        "fontFamily": "body",
+        "fontSize": "14px",
+        "lineHeight": "1.2",
+        "fontWeight": 600,
+        "letterSpacing": "0",
+        "css": "--de-type-label-m"
+      },
+      "labelS": {
+        "fontFamily": "body",
+        "fontSize": "12px",
+        "lineHeight": "1.2",
+        "fontWeight": 600,
+        "letterSpacing": "0.02em",
+        "css": "--de-type-label-s"
+      },
+      "caption": {
+        "fontFamily": "body",
+        "fontSize": "12px",
+        "lineHeight": "1.45",
+        "fontWeight": 400,
+        "css": "--de-type-caption"
+      }
+    },
+    "responsive": {
+      "mobileH1": "36px/1.15",
+      "mobileH2": "28px/1.2",
+      "mobileH3": "21px/1.3",
+      "mobileBody": "16px/1.55",
+      "minimumBody": "16px"
+    }
+  },
+  "spacing": {
+    "0": {
+      "value": "0",
+      "css": "--de-space-0"
+    },
+    "1": {
+      "value": "4px",
+      "css": "--de-space-1"
+    },
+    "2": {
+      "value": "8px",
+      "css": "--de-space-2"
+    },
+    "3": {
+      "value": "12px",
+      "css": "--de-space-3"
+    },
+    "4": {
+      "value": "16px",
+      "css": "--de-space-4"
+    },
+    "5": {
+      "value": "20px",
+      "css": "--de-space-5"
+    },
+    "6": {
+      "value": "24px",
+      "css": "--de-space-6"
+    },
+    "8": {
+      "value": "32px",
+      "css": "--de-space-8"
+    },
+    "10": {
+      "value": "40px",
+      "css": "--de-space-10"
+    },
+    "12": {
+      "value": "48px",
+      "css": "--de-space-12"
+    },
+    "16": {
+      "value": "64px",
+      "css": "--de-space-16"
+    },
+    "20": {
+      "value": "80px",
+      "css": "--de-space-20"
+    },
+    "24": {
+      "value": "96px",
+      "css": "--de-space-24"
+    },
+    "32": {
+      "value": "128px",
+      "css": "--de-space-32"
+    },
+    "pageDesktop": {
+      "value": "72px",
+      "css": "--de-page-gutter-desktop"
+    },
+    "pageTablet": {
+      "value": "32px",
+      "css": "--de-page-gutter-tablet"
+    },
+    "pageMobile": {
+      "value": "20px",
+      "css": "--de-page-gutter-mobile"
+    },
+    "sectionDesktop": {
+      "value": "96px",
+      "css": "--de-section-gap-desktop"
+    },
+    "sectionMobile": {
+      "value": "64px",
+      "css": "--de-section-gap-mobile"
+    }
+  },
+  "layout": {
+    "contentMax": {
+      "value": "1296px",
+      "css": "--de-content-max"
+    },
+    "readingMax": {
+      "value": "760px",
+      "css": "--de-reading-max"
+    },
+    "gridDesktop": {
+      "columns": 12,
+      "gutter": "24px",
+      "margin": "72px"
+    },
+    "gridTablet": {
+      "columns": 8,
+      "gutter": "20px",
+      "margin": "32px"
+    },
+    "gridMobile": {
+      "columns": 4,
+      "gutter": "12px",
+      "margin": "20px"
+    },
+    "breakpoints": {
+      "mobile": "0px",
+      "tablet": "768px",
+      "desktop": "1200px",
+      "wide": "1440px"
+    }
+  },
+  "radius": {
+    "xs": {
+      "value": "6px",
+      "css": "--de-radius-xs"
+    },
+    "sm": {
+      "value": "10px",
+      "css": "--de-radius-sm"
+    },
+    "md": {
+      "value": "14px",
+      "css": "--de-radius-md"
+    },
+    "card": {
+      "value": "18px",
+      "css": "--de-radius-card"
+    },
+    "lg": {
+      "value": "24px",
+      "css": "--de-radius-lg"
+    },
+    "xl": {
+      "value": "32px",
+      "css": "--de-radius-xl"
+    },
+    "pill": {
+      "value": "999px",
+      "css": "--de-radius-pill"
+    }
+  },
+  "shadow": {
+    "xs": {
+      "value": "0 1px 2px rgba(11,31,58,0.06)",
+      "css": "--de-shadow-xs"
+    },
+    "sm": {
+      "value": "0 4px 16px rgba(11,31,58,0.08)",
+      "css": "--de-shadow-sm"
+    },
+    "card": {
+      "value": "0 10px 32px rgba(11,31,58,0.10)",
+      "css": "--de-shadow-card"
+    },
+    "elevated": {
+      "value": "0 18px 56px rgba(11,31,58,0.16)",
+      "css": "--de-shadow-elevated"
+    },
+    "focus": {
+      "value": "0 0 0 4px rgba(47,125,98,0.20)",
+      "css": "--de-shadow-focus"
+    }
+  },
+  "border": {
+    "default": {
+      "value": "1px solid #E2E5E9",
+      "css": "--de-border-default"
+    },
+    "strong": {
+      "value": "1px solid #CDD2D9",
+      "css": "--de-border-strong"
+    },
+    "brand": {
+      "value": "1px solid #0B1F3A",
+      "css": "--de-border-brand"
+    },
+    "focus": {
+      "value": "2px solid #2F7D62",
+      "css": "--de-border-focus"
+    }
+  },
+  "motion": {
+    "fast": {
+      "value": "120ms",
+      "css": "--de-motion-fast"
+    },
+    "base": {
+      "value": "200ms",
+      "css": "--de-motion-base"
+    },
+    "slow": {
+      "value": "320ms",
+      "css": "--de-motion-slow"
+    },
+    "ease": {
+      "value": "cubic-bezier(0.2, 0, 0, 1)",
+      "css": "--de-motion-ease"
+    },
+    "reducedMotion": "Disable non-essential transforms and animated counters when prefers-reduced-motion is enabled."
+  },
+  "components": {
+    "button": {
+      "height": {
+        "sm": "40px",
+        "md": "48px",
+        "lg": "56px"
+      },
+      "paddingInline": {
+        "sm": "16px",
+        "md": "22px",
+        "lg": "28px"
+      },
+      "radius": "10px",
+      "font": "14–16px / 600",
+      "primary": {
+        "background": "#0B1F3A",
+        "foreground": "#FFFFFF",
+        "hover": "#123155",
+        "pressed": "#071426",
+        "disabledBackground": "#CDD2D9",
+        "disabledForeground": "#7E8796"
+      },
+      "positive": {
+        "background": "#2F7D62",
+        "foreground": "#FFFFFF",
+        "hover": "#3D9274",
+        "pressed": "#23644F"
+      },
+      "secondary": {
+        "background": "#FFFFFF",
+        "foreground": "#0B1F3A",
+        "border": "#CDD2D9",
+        "hoverBackground": "#F4F7FA"
+      },
+      "ghost": {
+        "background": "transparent",
+        "foreground": "#1B456E",
+        "hoverBackground": "#EAF0F6"
+      },
+      "danger": {
+        "background": "#C54850",
+        "foreground": "#FFFFFF",
+        "hover": "#982F36"
+      },
+      "focus": "2px focus border plus 4px focus shadow",
+      "mobileRule": "Full-width for primary form actions; minimum touch target 48px."
+    },
+    "card": {
+      "default": {
+        "background": "#FFFFFF",
+        "border": "#E2E5E9",
+        "radius": "18px",
+        "shadow": "0 4px 16px rgba(11,31,58,0.08)",
+        "padding": "24px"
+      },
+      "interactive": {
+        "hoverTransform": "translateY(-2px)",
+        "hoverShadow": "0 10px 32px rgba(11,31,58,0.10)",
+        "focus": "visible focus ring"
+      },
+      "editorial": {
+        "background": "#F7F5F0",
+        "border": "transparent",
+        "radius": "24px",
+        "padding": "32px"
+      },
+      "dark": {
+        "background": "#0B1F3A",
+        "foreground": "#FFFFFF",
+        "radius": "24px",
+        "padding": "32px"
+      },
+      "risk": {
+        "background": "risk dependent",
+        "border": "risk dependent at 20% opacity",
+        "radius": "18px",
+        "padding": "20px"
+      }
+    },
+    "form": {
+      "fieldHeight": "52px",
+      "textareaMinHeight": "128px",
+      "radius": "10px",
+      "background": "#FFFFFF",
+      "border": "#CDD2D9",
+      "label": "14px / 600 / #172033",
+      "placeholder": "#7E8796",
+      "help": "12px / #5D687B",
+      "focusBorder": "#2F7D62",
+      "focusShadow": "0 0 0 4px rgba(47,125,98,0.20)",
+      "errorBorder": "#C54850",
+      "errorBackground": "#FFF2F3",
+      "errorText": "#982F36",
+      "successBorder": "#2F7D62",
+      "groupGap": "24px",
+      "mobileGroupGap": "20px"
+    },
+    "header": {
+      "desktopHeight": "72px",
+      "mobileHeight": "64px",
+      "background": "#0B1F3A",
+      "foreground": "#FFFFFF",
+      "sticky": true,
+      "desktopBehavior": "Full navigation plus utility action",
+      "mobileBehavior": "Logo, one optional icon, menu button; full-screen navigation drawer"
+    },
+    "propertyCard": {
+      "imageRatio": "4 / 3",
+      "radius": "18px",
+      "price": "20px / 700",
+      "metadata": "14px / #455064",
+      "actions": [
+        "favorite",
+        "compare"
+      ],
+      "badges": [
+        "status",
+        "risk score",
+        "new/resale"
+      ],
+      "mobileRule": "One column; keep price, risk and three decisive attributes above fold."
+    },
+    "riskScoreBadge": {
+      "sizes": {
+        "sm": "32px",
+        "md": "48px",
+        "lg": "88px"
+      },
+      "shape": "circle or compact pill depending on context",
+      "content": "score plus verbal label; never use color alone",
+      "methodLink": "Required near large score"
+    },
+    "comparison": {
+      "desktop": "Sticky tray plus table with frozen first column",
+      "tablet": "Two objects per view",
+      "mobile": "Criterion-by-criterion cards; internal horizontal swipe allowed only inside component",
+      "highlight": "Best value is marked with icon and text, not color alone"
+    },
+    "disclaimer": {
+      "background": "#F4F7FA",
+      "border": "#CDD2D9",
+      "accent": "#225B96",
+      "radius": "14px",
+      "font": "13px / 1.5",
+      "icon": "information",
+      "requiredContent": [
+        "scope",
+        "data date",
+        "limitations",
+        "not legal advice when applicable"
+      ]
+    },
+    "stickyMobileCTA": {
+      "height": "72px plus safe-area inset",
+      "background": "rgba(255,255,255,0.96)",
+      "borderTop": "#E2E5E9",
+      "shadow": "0 -8px 24px rgba(11,31,58,0.10)",
+      "layout": "primary action plus optional compact secondary icon"
+    },
+    "emptyState": {
+      "maxWidth": "520px",
+      "iconSurface": "#EAF0F6",
+      "title": "24px / 600",
+      "body": "16px / #455064",
+      "actions": [
+        "primary recovery",
+        "secondary reset"
+      ]
+    },
+    "successState": {
+      "background": "#F1F8F5",
+      "accent": "#2F7D62",
+      "title": "28px display",
+      "required": [
+        "what completed",
+        "where result is saved",
+        "next steps",
+        "privacy reassurance"
+      ]
+    }
+  },
+  "accessibility": {
+    "contrast": "Target WCAG 2.2 AA for text and controls.",
+    "focus": "All interactive elements require visible keyboard focus.",
+    "touchTarget": "Minimum 44x44px; preferred 48x48px.",
+    "color": "Risk and status states always include text/icon, not color alone.",
+    "forms": "Persistent labels; errors linked to fields; no placeholder-only labels.",
+    "images": "Meaningful property images require descriptive alt text; decorative architecture can use empty alt.",
+    "tables": "Comparison tables need semantic headers and mobile alternative.",
+    "zoom": "No content loss at 200% zoom."
+  },
+  "responsiveRules": {
+    "1440": "12-column grid, 1296px content max, two-column tools and property detail layouts.",
+    "768": "8-column grid, filters in drawer, property detail summary moves below gallery when needed.",
+    "390": "4-column grid, 20px page margins, single-column cards, sticky bottom action, no page-level horizontal scroll."
+  },
+  "icons": {
+    "grid": 24,
+    "style": "outline",
+    "strokeWidth": 1.8,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "minimumVisualSize": 16,
+    "mobileHitArea": 44,
+    "registry": [
+      "home",
+      "calculator",
+      "camera",
+      "checklist",
+      "shield",
+      "compare",
+      "pin",
+      "heart",
+      "search",
+      "sliders",
+      "building",
+      "area",
+      "rooms",
+      "floor",
+      "leaf",
+      "wave",
+      "flood",
+      "legal",
+      "refresh",
+      "star",
+      "clock",
+      "info",
+      "arrow",
+      "download",
+      "phone",
+      "file",
+      "menu",
+      "user",
+      "check"
+    ],
+    "implementation": {
+      "format": "inline SVG primitives",
+      "allowed": [
+        "path",
+        "line",
+        "polyline",
+        "polygon",
+        "rect",
+        "circle"
+      ],
+      "forbidden": [
+        "emoji",
+        "unicode icons",
+        "icon font",
+        "external href",
+        "symbol/use dependency"
+      ]
+    }
+  },
+  "imagery": {
+    "direction": "calm editorial architecture, honest interiors, restrained premium tone",
+    "roles": {
+      "hero": "architectural context with negative space",
+      "catalog": "object recognition without overpowering data",
+      "property": "real space, light and condition",
+      "tool": "data-poster instead of decorative photography"
+    },
+    "aspectRatios": {
+      "heroDesktop": "16:9",
+      "propertyGallery": "16:9",
+      "catalogCard": "4:3",
+      "editorial": "3:2",
+      "mobileCrop": "4:5"
+    },
+    "sourcePriority": [
+      "verified object photos",
+      "licensed location photos",
+      "commissioned expert photography",
+      "AI editorial poster"
+    ],
+    "aiAllowed": [
+      "generic architectural editorial poster",
+      "neutral interior editorial illustration",
+      "data/risk illustration"
+    ],
+    "aiForbidden": [
+      "specific property representation",
+      "changed view from window",
+      "changed condition or materials",
+      "fake documents or infrastructure"
+    ],
+    "delivery": {
+      "svgWireframe": "inline vector compositions",
+      "productionWeb": "AVIF with WebP fallback",
+      "objectFit": "cover",
+      "focalPointRequired": true
+    },
+    "qualityChecks": [
+      "geometry",
+      "realistic regional context",
+      "no text/logos/artifacts",
+      "no misleading similarity to a listed property",
+      "tested crops at 1440/768/390"
+    ]
+  },
+  "svgDelivery": {
+    "profile": "SVG 1.1 compatible subset",
+    "externalAssets": false,
+    "externalFontsRequired": false,
+    "usesUseElement": false,
+    "usesForeignObject": false,
+    "usesCssFilters": false,
+    "previewRule": "Preview must be generated by directly rendering 03-wireframes.svg.",
+    "testedRenderers": [
+      "Inkscape",
+      "CairoSVG"
+    ]
+  }
+}

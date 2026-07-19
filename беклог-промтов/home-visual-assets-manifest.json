@@ -1,0 +1,61 @@
+{
+  "package": "dom-expert homepage visual assets",
+  "assets": [
+    {
+      "file": "home-hero-desktop-v1.svg",
+      "priority": "P0",
+      "size": "desktop",
+      "prompt": "101-home-hero-posters.md"
+    },
+    {
+      "file": "home-hero-mobile-v1.svg",
+      "priority": "P0",
+      "size": "mobile",
+      "prompt": "101-home-hero-posters.md"
+    },
+    {
+      "file": "home-sellers-poster-v1.webp",
+      "priority": "P1",
+      "size": "1200x900",
+      "prompt": "102-home-sellers-poster.md"
+    },
+    {
+      "file": "home-buyers-poster-v1.webp",
+      "priority": "P1",
+      "size": "1200x900",
+      "prompt": "103-home-buyers-poster.md"
+    },
+    {
+      "file": "home-process-poster-v1.webp",
+      "priority": "P1",
+      "size": "1400x800",
+      "prompt": "104-home-process-poster.md"
+    },
+    {
+      "file": "home-consultation-poster-v1.webp",
+      "priority": "P1",
+      "size": "1600x700",
+      "prompt": "105-home-consultation-poster.md"
+    },
+    {
+      "file": "home-materials-sellers-v1.webp",
+      "priority": "P2",
+      "size": "900x600",
+      "prompt": "106-home-materials-sellers.md"
+    },
+    {
+      "file": "home-materials-buyers-v1.webp",
+      "priority": "P2",
+      "size": "900x600",
+      "prompt": "107-home-materials-buyers.md"
+    },
+    {
+      "file": "home-materials-documents-v1.webp",
+      "priority": "P2",
+      "size": "900x600",
+      "prompt": "108-home-materials-documents.md"
+    }
+  ],
+  "github_target": "gest0r1/site_re/беклог-промтов",
+  "note": "GitHub write integration previously returned 403; package is ready for upload."
+}
