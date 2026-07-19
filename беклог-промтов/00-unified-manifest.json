@@ -1,0 +1,411 @@
+{
+  "project": "дом-эксперт.рф",
+  "version": "github-webp-clean",
+  "tasks": [
+    {
+      "id": 101,
+      "title": "Главная — hero",
+      "url": "/",
+      "priority": "P0",
+      "category": "homepage",
+      "purpose": "первый экран и адаптивный архитектурный visual",
+      "prompt": "беклог-промтов/101-home-hero-posters.md",
+      "media": "беклог-промтов/assets/home-hero-desktop-v2.webp; беклог-промтов/assets/home-hero-mobile-v2.webp"
+    },
+    {
+      "id": 102,
+      "title": "Главная — блок владельцев",
+      "url": "/",
+      "priority": "P1",
+      "category": "homepage",
+      "purpose": "оценка, подготовка и продажа",
+      "prompt": "беклог-промтов/102-home-sellers-poster.md",
+      "media": "беклог-промтов/assets/home-sellers-poster-v1.webp"
+    },
+    {
+      "id": 103,
+      "title": "Главная — блок покупателей",
+      "url": "/",
+      "priority": "P1",
+      "category": "homepage",
+      "purpose": "подбор, проверка и сопровождение покупки",
+      "prompt": "беклог-промтов/103-home-buyers-poster.md",
+      "media": "беклог-промтов/assets/home-buyers-poster-v1.webp"
+    },
+    {
+      "id": 104,
+      "title": "Главная — процесс",
+      "url": "/",
+      "priority": "P1",
+      "category": "homepage",
+      "purpose": "как проходит работа",
+      "prompt": "беклог-промтов/104-home-process-poster.md",
+      "media": "беклог-промтов/assets/home-process-poster-v1.webp"
+    },
+    {
+      "id": 105,
+      "title": "Главная — консультация",
+      "url": "/",
+      "priority": "P1",
+      "category": "homepage",
+      "purpose": "финальный CTA консультации",
+      "prompt": "беклог-промтов/105-home-consultation-poster.md",
+      "media": "беклог-промтов/assets/home-consultation-poster-v1.webp"
+    },
+    {
+      "id": 106,
+      "title": "Главная — материалы владельцам",
+      "url": "/",
+      "priority": "P2",
+      "category": "homepage",
+      "purpose": "обложка материалов для владельцев",
+      "prompt": "беклог-промтов/106-home-materials-sellers.md",
+      "media": "беклог-промтов/assets/home-materials-sellers-v1.webp"
+    },
+    {
+      "id": 107,
+      "title": "Главная — материалы покупателям",
+      "url": "/",
+      "priority": "P2",
+      "category": "homepage",
+      "purpose": "обложка материалов для покупателей",
+      "prompt": "беклог-промтов/107-home-materials-buyers.md",
+      "media": "беклог-промтов/assets/home-materials-buyers-v1.webp"
+    },
+    {
+      "id": 108,
+      "title": "Главная — материалы о документах",
+      "url": "/",
+      "priority": "P2",
+      "category": "homepage",
+      "purpose": "обложка материалов о документах и рисках",
+      "prompt": "беклог-промтов/108-home-materials-documents.md",
+      "media": "беклог-промтов/assets/home-materials-documents-v1.webp"
+    },
+    {
+      "id": 109,
+      "title": "Владельцам",
+      "url": "/sell/",
+      "priority": "P1",
+      "category": "seller",
+      "purpose": "маршрут владельца: оценка, диагностика, подготовка и сопровождение продажи",
+      "prompt": "беклог-промтов/109-sell.md",
+      "media": "беклог-промтов/assets/site-pages/poster-sell-hub-v1.webp"
+    },
+    {
+      "id": 110,
+      "title": "Оценка недвижимости",
+      "url": "/sell/estimate/",
+      "priority": "P1",
+      "category": "seller",
+      "purpose": "предварительный диапазон стоимости и объяснение факторов цены",
+      "prompt": "беклог-промтов/110-sell-estimate.md",
+      "media": "беклог-промтов/assets/site-pages/poster-mortgage-finance-v1.webp"
+    },
+    {
+      "id": 111,
+      "title": "Диагностика продажи",
+      "url": "/sell/diagnostic/",
+      "priority": "P1",
+      "category": "seller",
+      "purpose": "оценка готовности объекта и стратегии продажи, включая фото-анализ как встроенный шаг",
+      "prompt": "беклог-промтов/111-sell-diagnostic.md",
+      "media": "беклог-промтов/assets/site-pages/poster-risk-check-v1.webp"
+    },
+    {
+      "id": 112,
+      "title": "Подготовка к продаже",
+      "url": "/sell/prepare/",
+      "priority": "P2",
+      "category": "seller",
+      "purpose": "понятный план подготовки объекта без ненужных затрат",
+      "prompt": "беклог-промтов/112-sell-prepare.md",
+      "media": "беклог-промтов/assets/site-pages/poster-sell-hub-v1.webp"
+    },
+    {
+      "id": 113,
+      "title": "Документы продавца",
+      "url": "/sell/documents/",
+      "priority": "P2",
+      "category": "seller",
+      "purpose": "структурировать документы и риски до выхода на сделку",
+      "prompt": "беклог-промтов/113-sell-documents.md",
+      "media": "беклог-промтов/assets/site-pages/poster-meeting-documents-v1.webp"
+    },
+    {
+      "id": 114,
+      "title": "Показы недвижимости",
+      "url": "/sell/showings/",
+      "priority": "P2",
+      "category": "seller",
+      "purpose": "организация показов, обратной связи и безопасного доступа к объекту",
+      "prompt": "беклог-промтов/114-sell-showings.md",
+      "media": "беклог-промтов/assets/site-pages/poster-livingroom-consultation-v1.webp"
+    },
+    {
+      "id": 115,
+      "title": "Переговоры при продаже",
+      "url": "/sell/negotiation/",
+      "priority": "P2",
+      "category": "seller",
+      "purpose": "стратегия цены, торга и сравнения предложений покупателей",
+      "prompt": "беклог-промтов/115-sell-negotiation.md",
+      "media": "беклог-промтов/assets/site-pages/poster-meeting-documents-v1.webp"
+    },
+    {
+      "id": 116,
+      "title": "Налоги при продаже",
+      "url": "/sell/taxes/",
+      "priority": "P2",
+      "category": "seller",
+      "purpose": "объяснить основные налоговые факторы и подготовку исходных данных",
+      "prompt": "беклог-промтов/116-sell-taxes.md",
+      "media": "беклог-промтов/assets/site-pages/poster-mortgage-finance-v1.webp"
+    },
+    {
+      "id": 117,
+      "title": "Альтернативная сделка",
+      "url": "/sell/alternative/",
+      "priority": "P1",
+      "category": "seller",
+      "purpose": "показать цепочку продажи и покупки, зависимости и контроль рисков",
+      "prompt": "беклог-промтов/117-sell-alternative.md",
+      "media": "беклог-промтов/assets/site-pages/poster-meeting-documents-v1.webp"
+    },
+    {
+      "id": 118,
+      "title": "Покупателям",
+      "url": "/buyers/",
+      "priority": "P1",
+      "category": "buyer",
+      "purpose": "маршрут покупателя: каталог, подбор, проверка, ипотека и сопровождение",
+      "prompt": "беклог-промтов/118-buyers.md",
+      "media": "беклог-промтов/assets/site-pages/poster-catalog-exterior-v1.webp"
+    },
+    {
+      "id": 119,
+      "title": "Каталог или подбор объектов",
+      "url": "/buyers/catalog/",
+      "priority": "P1",
+      "category": "buyer",
+      "purpose": "каталог при наличии реальных объектов либо честный lead-capture подбор",
+      "prompt": "беклог-промтов/119-buyers-catalog.md",
+      "media": "беклог-промтов/assets/site-pages/poster-catalog-exterior-v1.webp"
+    },
+    {
+      "id": 120,
+      "title": "Ипотека",
+      "url": "/buyers/mortgage/",
+      "priority": "P1",
+      "category": "buyer",
+      "purpose": "предварительный расчёт и понятная последовательность подготовки заявки",
+      "prompt": "беклог-промтов/120-buyers-mortgage.md",
+      "media": "беклог-промтов/assets/site-pages/poster-mortgage-finance-v1.webp"
+    },
+    {
+      "id": 121,
+      "title": "Подбор недвижимости",
+      "url": "/buyers/selection/",
+      "priority": "P1",
+      "category": "buyer",
+      "purpose": "зафиксировать критерии, сформировать shortlist и организовать просмотры",
+      "prompt": "беклог-промтов/121-buyers-selection.md",
+      "media": "беклог-промтов/assets/site-pages/poster-livingroom-consultation-v1.webp"
+    },
+    {
+      "id": 122,
+      "title": "Проверка покупки",
+      "url": "/buyers/check/",
+      "priority": "P1",
+      "category": "buyer",
+      "purpose": "объединить юридические, объектные и инфраструктурные риски",
+      "prompt": "беклог-промтов/122-buyers-check.md",
+      "media": "беклог-промтов/assets/site-pages/poster-risk-check-v1.webp"
+    },
+    {
+      "id": 123,
+      "title": "Сопровождение покупки",
+      "url": "/buyers/support/",
+      "priority": "P2",
+      "category": "buyer",
+      "purpose": "показать этапы от выбора объекта до регистрации права",
+      "prompt": "беклог-промтов/123-buyers-support.md",
+      "media": "беклог-промтов/assets/site-pages/poster-meeting-documents-v1.webp"
+    },
+    {
+      "id": 124,
+      "title": "Переговоры при покупке",
+      "url": "/buyers/negotiation/",
+      "priority": "P2",
+      "category": "buyer",
+      "purpose": "аргументированное предложение по цене и условиям сделки",
+      "prompt": "беклог-промтов/124-buyers-negotiation.md",
+      "media": "беклог-промтов/assets/site-pages/poster-meeting-documents-v1.webp"
+    },
+    {
+      "id": 125,
+      "title": "Новостройка или вторичка",
+      "url": "/buyers/new-vs-resale/",
+      "priority": "P2",
+      "category": "buyer",
+      "purpose": "сравнить два сценария по срокам, цене, состоянию и рискам",
+      "prompt": "беклог-промтов/125-buyers-new-vs-resale.md",
+      "media": "беклог-промтов/assets/site-pages/poster-sell-hub-v1.webp"
+    },
+    {
+      "id": 126,
+      "title": "Проверка застройщика",
+      "url": "/buyers/check-developer/",
+      "priority": "P1",
+      "category": "buyer",
+      "purpose": "собрать проверяемые признаки проекта и девелопера с объяснением ограничений",
+      "prompt": "беклог-промтов/126-buyers-check-developer.md",
+      "media": "беклог-промтов/assets/site-pages/poster-developer-analytics-v1.webp"
+    },
+    {
+      "id": 127,
+      "title": "Чек-лист покупателя",
+      "url": "/buyers/checklist/",
+      "priority": "P2",
+      "category": "buyer",
+      "purpose": "пошаговый список проверки объекта, документов и условий сделки",
+      "prompt": "беклог-промтов/127-buyers-checklist.md",
+      "media": "беклог-промтов/assets/site-pages/poster-risk-check-v1.webp"
+    },
+    {
+      "id": 128,
+      "title": "Новостройки",
+      "url": "/buyers/catalog/new-buildings/",
+      "priority": "P2",
+      "category": "buyer",
+      "purpose": "выдача реальных проектов либо индивидуальный подбор новостроек",
+      "prompt": "беклог-промтов/128-buyers-catalog-new-buildings.md",
+      "media": "беклог-промтов/assets/site-pages/poster-catalog-exterior-v1.webp"
+    },
+    {
+      "id": 129,
+      "title": "Вторичная недвижимость",
+      "url": "/buyers/catalog/resale/",
+      "priority": "P2",
+      "category": "buyer",
+      "purpose": "выдача реальных объектов вторичного рынка либо индивидуальный подбор",
+      "prompt": "беклог-промтов/129-buyers-catalog-resale.md",
+      "media": "беклог-промтов/assets/site-pages/poster-livingroom-consultation-v1.webp"
+    },
+    {
+      "id": 130,
+      "title": "О компании",
+      "url": "/about/",
+      "priority": "P1",
+      "category": "trust",
+      "purpose": "объяснить, кто работает с клиентом, подход и процесс без неподтверждённых claims",
+      "prompt": "беклог-промтов/130-about.md",
+      "media": "беклог-промтов/assets/site-pages/poster-about-trust-v1.webp"
+    },
+    {
+      "id": 131,
+      "title": "Материалы",
+      "url": "/blog/",
+      "priority": "P1",
+      "category": "content",
+      "purpose": "редакционный центр с четырьмя подтверждёнными категориями",
+      "prompt": "беклог-промтов/131-blog.md",
+      "media": "беклог-промтов/assets/site-pages/poster-content-editorial-v1.webp"
+    },
+    {
+      "id": 132,
+      "title": "Материалы для владельцев",
+      "url": "/blog/sellers/",
+      "priority": "P2",
+      "category": "content",
+      "purpose": "статьи об оценке, подготовке, продаже, документах и налогах",
+      "prompt": "беклог-промтов/132-blog-sellers.md",
+      "media": "беклог-промтов/assets/site-pages/poster-content-editorial-v1.webp"
+    },
+    {
+      "id": 133,
+      "title": "Материалы для покупателей",
+      "url": "/blog/buyers/",
+      "priority": "P2",
+      "category": "content",
+      "purpose": "статьи о выборе, проверке, переговорах и сопровождении покупки",
+      "prompt": "беклог-промтов/133-blog-buyers.md",
+      "media": "беклог-промтов/assets/site-pages/poster-content-editorial-v1.webp"
+    },
+    {
+      "id": 134,
+      "title": "Материалы об ипотеке",
+      "url": "/blog/mortgage/",
+      "priority": "P2",
+      "category": "content",
+      "purpose": "статьи о расчётах, документах и процессе ипотечной заявки",
+      "prompt": "беклог-промтов/134-blog-mortgage.md",
+      "media": "беклог-промтов/assets/site-pages/poster-content-editorial-v1.webp"
+    },
+    {
+      "id": 135,
+      "title": "Материалы о документах",
+      "url": "/blog/documents/",
+      "priority": "P2",
+      "category": "content",
+      "purpose": "статьи о документах, проверках и юридических рисках",
+      "prompt": "беклог-промтов/135-blog-documents.md",
+      "media": "беклог-промтов/assets/site-pages/poster-content-editorial-v1.webp"
+    },
+    {
+      "id": 136,
+      "title": "Отзывы",
+      "url": "/reviews/",
+      "priority": "P1",
+      "category": "trust",
+      "purpose": "подтверждённые отзывы с фильтрами и прозрачным источником",
+      "prompt": "беклог-промтов/136-reviews.md",
+      "media": "беклог-промтов/assets/site-pages/poster-livingroom-consultation-v1.webp"
+    },
+    {
+      "id": 137,
+      "title": "Контакты",
+      "url": "/contacts/",
+      "priority": "P1",
+      "category": "trust",
+      "purpose": "контактные способы и форма с согласием без неподтверждённого офиса",
+      "prompt": "беклог-промтов/137-contacts.md",
+      "media": "беклог-промтов/assets/site-pages/poster-about-trust-v1.webp"
+    },
+    {
+      "id": 138,
+      "title": "Шаблон карточки объекта",
+      "url": "PATTERN: single property",
+      "priority": "P1",
+      "category": "pattern",
+      "purpose": "галерея, характеристики, risk UX и безопасный следующий шаг",
+      "prompt": "беклог-промтов/138-pattern-object-detail.md",
+      "media": "беклог-промтов/assets/site-pages/poster-catalog-exterior-v1.webp"
+    },
+    {
+      "id": 139,
+      "title": "Шаблон статьи",
+      "url": "PATTERN: single post",
+      "priority": "P2",
+      "category": "pattern",
+      "purpose": "редакционная статья с навигацией, дисклеймерами и связанными сценариями",
+      "prompt": "беклог-промтов/139-pattern-article.md",
+      "media": "беклог-промтов/assets/site-pages/poster-content-editorial-v1.webp"
+    },
+    {
+      "id": 140,
+      "title": "Empty state каталога",
+      "url": "PATTERN: catalog empty state",
+      "priority": "P1",
+      "category": "pattern",
+      "purpose": "честное состояние при отсутствии подходящих или опубликованных объектов",
+      "prompt": "беклог-промтов/140-pattern-catalog-empty.md",
+      "media": "беклог-промтов/assets/site-pages/poster-empty-state-v1.webp"
+    }
+  ],
+  "rules": [
+    "WebP production posters only",
+    "SVG allowed only for logos, icons, favicon sources and wireframes",
+    "AI/editorial poster is not a real property photo"
+  ]
+}

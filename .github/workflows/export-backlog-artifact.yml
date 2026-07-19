@@ -1,0 +1,23 @@
+name: Export backlog artifact
+on:
+  pull_request:
+    branches: [master]
+    types: [synchronize]
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify scope
+        run: |
+          test -d 'беклог-промтов'
+          find 'беклог-промтов' -type f | sort
+      - name: Upload structured backlog
+        uses: actions/upload-artifact@v4
+        with:
+          name: dom-expert-backlog-prompts-and-assets
+          path: беклог-промтов
+          if-no-files-found: error
+          retention-days: 3
