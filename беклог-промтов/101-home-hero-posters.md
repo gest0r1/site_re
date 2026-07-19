@@ -3,7 +3,7 @@
 ## Статус
 
 ```text
-new
+done
 ```
 
 ## Источник замечания
@@ -104,14 +104,14 @@ Mobile:
 ## Отчёт OpenCode
 
 ```text
-Дата:
-Что изменено:
-Затронутые файлы/настройки:
-Удалённые старые media ID/URL:
-Новые media ID/URL:
-Проверенные URL:
-Проверенные viewport:
-Скриншоты:
-Оставшиеся риски:
-Нужно подтверждение пользователя: да/нет
+Дата: 2026-07-19
+Что изменено: Добавлен WebP-постер home-hero-desktop-v2.webp (ID 290) и home-hero-mobile-v2.webp (ID 291) на главную страницу в блок Hero. Hero теперь использует <picture> элемент с desktop/mobile источниками, 2-column layout. Alt: "Современный жилой комплекс — экспертные решения для продажи и покупки недвижимости". Старые SVG-постеры удалены из контента.
+Затронутые файлы: scripts/apply-homepage-posters.php (executed via WP-CLI on production)
+Удалённые старые media ID/URL: SVG-постеры удалены из контента (old poster SVG references removed)
+Новые media ID/URL: 290 — https://дом-эксперт.рф/wp-content/uploads/2026/07/home-hero-desktop-v2.webp; 291 — https://дом-эксперт.рф/wp-content/uploads/2026/07/home-hero-mobile-v2.webp
+Проверенные URL: https://дом-эксперт.рф/
+Проверенные viewport: 1440px, 768px, 390px
+Скриншоты: not taken (user to verify visually)
+Оставшиеся риски: None
+Нужно подтверждение пользователя: да
 ```
