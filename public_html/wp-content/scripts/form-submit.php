@@ -80,16 +80,39 @@ $message = "📩 <b>Новая заявка</b>\n"
     . "\n━━━━━━━━━━━━━━━\n"
     . "<i>Отправлено с дом-эксперт.рф</i>";
 
-// --- Queue ---
+// --- Send to Telegram directly ---
+$bot_token = '8711397467:AAH91Zlegh7bEAkq0kOqAx5BnHT1WeHCtBk';
+$chat_ids = [411228198];
+$sent = false;
+
+foreach ($chat_ids as $chat_id) {
+    $ch = curl_init("https://api.telegram.org/bot{$bot_token}/sendMessage");
+    curl_setopt_array($ch, [
+        CURLOPT_POST => true,
+        CURLOPT_POSTFIELDS => json_encode([
+            'chat_id' => $chat_id,
+            'text' => $message,
+            'parse_mode' => 'HTML',
+            'disable_web_page_preview' => true,
+        ]),
+        CURLOPT_HTTPHEADER => ['Content-Type: application/json'],
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT => 15,
+    ]);
+    $response = curl_exec($ch);
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+    if ($http_code === 200) $sent = true;
+}
+
+// --- Queue (fallback) ---
 $queue_file = '/home/g/gest0rmail/form_queue.json';
-$queue = file_exists($queue_file) ? (json_decode(file_get_contents($queue_file), true) ?? []) : [];
-$queue[] = [
-    'created_at' => date('Y-m-d H:i:s'),
-    'message'    => $message,
-    'sent'       => false,
-];
-if (count($queue) > 1000) $queue = array_slice($queue, -1000);
-file_put_contents($queue_file, json_encode($queue, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
-chmod($queue_file, 0644);
+@file_put_contents($queue_file, json_encode(
+    array_merge(
+        file_exists($queue_file) ? (json_decode(@file_get_contents($queue_file), true) ?? []) : [],
+        [['created_at' => date('Y-m-d H:i:s'), 'message' => $message, 'sent' => $sent]]
+    ),
+    JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+), LOCK_EX);
 
 echo json_encode(['success' => true, 'message' => 'Заявка принята']);

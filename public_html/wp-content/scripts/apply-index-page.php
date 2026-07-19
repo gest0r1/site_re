@@ -211,7 +211,7 @@ $new_content = <<<HTML
 <section class="de-section" style="padding:80px 0;background:linear-gradient(135deg,#0A1628 0%,#1A2A4A 100%);">
 <div style="max-width:500px;margin:0 auto;padding:0 24px;text-align:center;">
 <h2 style="font-size:32px;line-height:40px;color:#FFFFFF;font-weight:700;margin:0 0 12px;">
-Готовы начать?
+Давайте начнём!
 </h2>
 <p style="font-size:16px;color:#CBD5E0;margin:0 0 36px;">
 Оставьте заявку — мы перезвоним в рабочее время в течение 30 минут.
@@ -237,10 +237,9 @@ $new_content = <<<HTML
 <div class="form-step-2" style="display:none;">
 <input type="text" name="name" placeholder="Имя" required style="padding:14px 16px;border-radius:8px;border:none;font-size:16px;background:#FFFFFF;color:#172033;height:48px;box-sizing:border-box;">
 <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required style="padding:14px 16px;border-radius:8px;border:none;font-size:16px;background:#FFFFFF;color:#172033;height:48px;box-sizing:border-box;">
-<label style="font-size:14px;color:#CBD5E0;display:flex;align-items:center;gap:8px;justify-content:center;cursor:pointer;">
-<input type="checkbox" required style="width:18px;height:18px;cursor:pointer;">
-Я согласен на обработку
-<a href="/privacy-policy/" style="color:#F5A623;text-decoration:underline;margin-left:4px;">персональных данных</a>
+<label style="font-size:11px;color:#718096;display:flex;align-items:flex-start;gap:6px;cursor:pointer;justify-content:center;">
+<input type="checkbox" required style="width:14px;height:14px;margin-top:2px;cursor:pointer;">
+<span>Нажимая на кнопку, вы соглашаетесь с <a href="/privacy-policy/" style="color:#2F7D46;text-decoration:underline;">Политикой обработки персональных данных</a></span>
 </label>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
 <button type="button" class="btn-back" style="background:rgba(255,255,255,0.15);color:#CBD5E0;padding:16px 32px;border-radius:12px;border:none;font-weight:600;font-size:16px;cursor:pointer;">

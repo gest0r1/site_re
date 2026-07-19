@@ -90,6 +90,14 @@
     form.addEventListener('submit', function(e) {
       e.preventDefault();
 
+      // Validate consent checkbox in step 2
+      var consentBox = form.querySelector('.form-step-2 input[type="checkbox"][required]');
+      if (consentBox && !consentBox.checked) {
+        alert('Пожалуйста, подтвердите согласие на обработку персональных данных');
+        consentBox.style.outline = '2px solid #E53E3E';
+        return;
+      }
+
       var formData = new FormData(form);
       var data = {};
       formData.forEach(function(value, key) {

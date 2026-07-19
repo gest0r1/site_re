@@ -200,9 +200,9 @@ $new_content = <<<HTML
 <div class="form-step-2" style="display:none;">
 <input type="text" name="name" placeholder="Имя" required style="padding:14px 16px;border-radius:8px;border:none;font-size:16px;background:#FFFFFF;color:#172033;height:48px;box-sizing:border-box;">
 <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required style="padding:14px 16px;border-radius:8px;border:none;font-size:16px;background:#FFFFFF;color:#172033;height:48px;box-sizing:border-box;">
-<label style="font-size:13px;color:#CBD5E0;display:flex;align-items:center;gap:8px;justify-content:center;cursor:pointer;">
-<input type="checkbox" required style="width:16px;height:16px;cursor:pointer;">
-Согласен на обработку <a href="/privacy-policy/" style="color:#F5A623;text-decoration:underline;">персональных данных</a>
+<label style="font-size:11px;color:#718096;display:flex;align-items:flex-start;gap:6px;cursor:pointer;justify-content:center;">
+<input type="checkbox" required style="width:14px;height:14px;margin-top:2px;cursor:pointer;">
+<span>Нажимая на кнопку, вы соглашаетесь с <a href="/privacy-policy/" style="color:#2F7D46;text-decoration:underline;">Политикой обработки персональных данных</a></span>
 </label>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
 <button type="button" class="btn-back" style="background:rgba(255,255,255,0.15);color:#CBD5E0;padding:16px;border-radius:12px;border:none;font-weight:600;font-size:16px;cursor:pointer;">

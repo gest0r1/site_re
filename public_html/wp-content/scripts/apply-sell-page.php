@@ -148,8 +148,9 @@ $new_content = <<<HTML
 <div class="form-step-2" style="display:none;">
 <input type="text" name="name" placeholder="Имя" required style="padding:14px 16px;border-radius:8px;border:none;font-size:16px;background:#FFFFFF;color:#172033;">
 <input type="tel" name="phone" placeholder="Телефон" required style="padding:14px 16px;border-radius:8px;border:none;font-size:16px;background:#FFFFFF;color:#172033;">
-<label style="font-size:14px;color:#CBD5E0;display:flex;align-items:center;gap:8px;">
-<input type="checkbox" required style="width:18px;height:18px;"> Я согласен на обработку персональных данных
+<label style="font-size:11px;color:#718096;display:flex;align-items:flex-start;gap:6px;cursor:pointer;justify-content:center;">
+<input type="checkbox" required style="width:14px;height:14px;margin-top:2px;cursor:pointer;">
+<span>Нажимая на кнопку, вы соглашаетесь с <a href="/privacy-policy/" style="color:#2F7D46;text-decoration:underline;">Политикой обработки персональных данных</a></span>
 </label>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
 <button type="button" class="btn-back" style="background:rgba(255,255,255,0.15);color:#CBD5E0;padding:16px 32px;border-radius:8px;border:none;font-weight:600;font-size:16px;cursor:pointer;">
